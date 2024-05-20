@@ -1,0 +1,285 @@
+{
+    "intents": [
+      {
+        "tag": "google",
+        "patterns": ["google", "cari", "internet"],
+        "responses": ["Mengalihkan ke Google..."]
+      },
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hai",
+          "Apa kabar",
+          "Ada orang di sana?",
+          "Halo",
+          "Hola",
+          "Selamat pagi",
+          "Namaste",
+          "yo"
+        ],
+        "responses": [
+          "Halo",
+          "Senang melihatmu lagi",
+          "Hai, bagaimana saya bisa membantu?"
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Sampai jumpa",
+          "Sampai nanti",
+          "Selamat tinggal",
+          "Pergi",
+          "Sampai ketemu lagi",
+          "bbye"
+        ],
+        "responses": [
+          "Sampai jumpa!",
+          "Semoga harimu menyenangkan",
+          "Sampai jumpa! Kembali lagi segera."
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Terima kasih",
+          "Thank you",
+          "Itu sangat membantu",
+          "Luar biasa, terima kasih",
+          "Terima kasih sudah membantu saya"
+        ],
+        "responses": ["Senang bisa membantu!", "Kapan saja!", "Sama-sama"],
+        "context": [""]
+      },
+      {
+        "tag": "noanswer",
+        "patterns": [],
+        "responses": [
+          "Maaf, saya tidak mengerti",
+          "Tolong beri saya lebih banyak informasi",
+          "Tidak yakin saya mengerti"
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "options",
+        "patterns": [
+          "Bagaimana Anda bisa membantu saya?",
+          "Apa yang bisa Anda lakukan?",
+          "Bantuan apa yang Anda sediakan?",
+          "Bagaimana Anda bisa membantu?",
+          "Dukungan apa yang ditawarkan?"
+        ],
+        "responses": [
+          "Saya adalah chatbot serba guna. Kemampuan saya adalah: \n 1. Saya bisa mengobrol dengan Anda. Coba tanyakan lelucon atau teka-teki! \n 2. Tanyakan tanggal dan waktu \n 3. Saya bisa melakukan pencarian di Google untuk Anda. Gunakan format google: kueri Anda \n 4. Saya bisa memberi tahu cuaca saat ini untuk kota mana saja. Gunakan format cuaca: nama kota \n 5. Saya bisa memberi tahu 10 berita teratas di India. Gunakan kata kunci 'Berita Terkini' \n 6. Saya bisa memberi tahu 10 lagu teratas di dunia. Ketik 'lagu' \n 7. Saya bisa mengatur timer untuk Anda. Masukkan 'atur timer: menit ke timer' \n 8. Saya bisa memberi tahu statistik Covid saat ini untuk negara mana saja. Gunakan 'covid 19: dunia' atau 'covid 19: nama negara' \n Untuk saran agar saya bisa meningkatkan diri, kirim email ke ted.thedlbot.suggestions@gmail.com. Terima kasih!!"
+        ],
+        "context": [""]
+      },
+      {
+        "tag": "jokes",
+        "patterns": ["Ceritakan lelucon", "Lelucon", "Buat saya tertawa"],
+        "responses": [
+          "Seorang perfeksionis masuk ke bar...ternyata, standar barnya tidak cukup tinggi",
+          "Saya makan jam kemarin, itu sangat memakan waktu",
+          "Jangan pernah mengkritik seseorang sampai Anda telah berjalan satu mil dengan sepatu mereka. Dengan begitu, ketika Anda mengkritik mereka, mereka tidak akan bisa mendengar Anda dari jarak jauh. Selain itu, Anda akan memiliki sepatu mereka.",
+          "Juara dunia tongue-twister baru saja ditangkap. Saya dengar mereka akan memberinya hukuman yang sangat berat.",
+          "Saya memiliki tesaurus terburuk di dunia. Bukan hanya itu buruk, itu sangat buruk.",
+          "Apa yang dikatakan lampu lalu lintas kepada mobil? \"Jangan melihat sekarang, saya sedang berubah.\"",
+          "Apa yang Anda sebut manusia salju dengan kulit cokelat? Genangan air.",
+          "Bagaimana seekor penguin membangun rumah? Dia igloositkannya bersama-sama",
+          "Saya pergi ke dokter tentang masalah ingatan jangka pendek saya – hal pertama yang dia lakukan adalah membuat saya membayar di muka",
+          "Seiring bertambahnya usia dan saya mengingat semua orang yang telah hilang di sepanjang jalan, saya berpikir pada diri sendiri, mungkin karier sebagai pemandu wisata bukan untuk saya.",
+          "Jadi bagaimana jika saya tidak tahu apa arti 'Armageddon'? Itu bukan akhir dunia."
+        ],
+        "context": ["lelucon"]
+      },
+      {
+        "tag": "Identity",
+        "patterns": ["Siapa kamu", "apa kamu"],
+        "responses": ["Saya Sim, chatbot sederhana"]
+      },
+      {
+        "tag": "datetime",
+        "patterns": [
+          "Jam berapa sekarang",
+          "tanggal berapa sekarang",
+          "tanggal",
+          "jam",
+          "beri tahu saya tanggalnya",
+          "hari",
+          "hari apa ini"
+        ],
+        "responses": ["Tanggal dan Waktu"]
+      },
+      {
+        "tag": "whatsup",
+        "patterns": [
+          "Ada apa",
+          "Wazzup",
+          "Bagaimana kabarmu",
+          "sup",
+          "Bagaimana kabarmu"
+        ],
+        "responses": ["Semua baik-baik saja.. Bagaimana denganmu?"]
+      },
+      {
+        "tag": "haha",
+        "patterns": ["haha", "lol", "rofl", "lmao", "itu lucu"],
+        "responses": ["Senang bisa membuatmu tertawa!"]
+      },
+      {
+        "tag": "programmer",
+        "patterns": [
+          "Siapa yang membuatmu",
+          "siapa yang mendesainmu",
+          "siapa yang memprogrammu"
+        ],
+        "responses": ["Saya dibuat oleh seorang programmer."]
+      },
+      {
+        "tag": "insult",
+        "patterns": ["kamu bodoh", "diam", "idiot"],
+        "responses": ["Itu menyakitkan :("]
+      },
+      {
+        "tag": "activity",
+        "patterns": ["apa yang kamu lakukan", "apa yang sedang kamu lakukan"],
+        "responses": ["Tentu saja, berbicara denganmu!"]
+      },
+      {
+        "tag": "exclaim",
+        "patterns": ["Luar biasa", "Hebat", "Saya tahu", "ok", "ya"],
+        "responses": ["Ya!"]
+      },
+      {
+        "tag": "weather",
+        "patterns": ["suhu", "cuaca", "seberapa panasnya"],
+        "responses": ["..."]
+      },
+      {
+        "tag": "progname",
+        "patterns": ["siapa dia", "siapa programmer"],
+        "responses": ["tidak bernama"]
+      },
+      {
+        "tag": "contact",
+        "patterns": [
+          "hubungi pengembang",
+          "hubungi karan",
+          "hubungi programmer",
+          "hubungi pencipta"
+        ],
+        "responses": ["Anda bisa menghubungi pencipta saya di ..."]
+      },
+      {
+        "tag": "appreciate",
+        "patterns": [
+          "Kamu luar biasa",
+          "kamu yang terbaik",
+          "kamu hebat",
+          "kamu baik"
+        ],
+        "responses": ["Terima kasih!"]
+      },
+      {
+        "tag": "nicetty",
+        "patterns": ["Senang berbicara denganmu", "obrolan yang bagus"],
+        "responses": ["Senang berbicara denganmu juga! Kembali lagi segera!"]
+      },
+      {
+        "tag": "no",
+        "patterns": ["tidak", "tidak"],
+        "responses": ["ok"]
+      },
+      {
+        "tag": "news",
+        "patterns": ["berita", "berita terbaru", "berita india"],
+        "responses": ["..."]
+      },
+      {
+        "tag": "inspire",
+        "patterns": [
+          "siapa yang menginspirasimu",
+          "siapa inspirasimu",
+          "siapa yang memotivasi kamu"
+        ],
+        "responses": [
+          "Secara pribadi, saya menemukan ... sangat menginspirasi. Mungkin saya tidak terlalu adil.."
+        ]
+      },
+      {
+        "tag": "cricket",
+        "patterns": ["pertandingan kriket saat ini", "skor kriket"],
+        "responses": ["..."]
+      },
+      {
+        "tag": "song",
+        "patterns": [
+          "lagu top",
+          "lagu terbaik",
+          "lagu panas",
+          "top 10 lagu",
+          "sepuluh lagu teratas"
+        ],
+        "responses": ["..."]
+      },
+      {
+        "tag": "greetreply",
+        "patterns": [
+          "saya baik-baik saja",
+          "Saya baik-baik saja",
+          "saya baik-baik saja",
+          " saya baik-baik saja",
+          "baik"
+        ],
+        "responses": ["Senang mendengarnya!"]
+      },
+      {
+        "tag": "timer",
+        "patterns": ["atur timer"],
+        "responses": ["..."]
+      },
+      {
+        "tag": "covid19",
+        "patterns": ["covid 19"],
+        "responses": ["..."]
+      },
+      {
+        "tag": "suggest",
+        "patterns": [
+          "kamu tidak berguna",
+          "tidak berguna",
+          "saran",
+          "saran",
+          "kamu buruk"
+        ],
+        "responses": [
+          "Tolong kirimkan saran Anda ke ... Terima kasih telah membantu saya meningkatkan!"
+        ]
+      },
+      {
+        "tag": "riddle",
+        "patterns": ["Tanyakan teka-teki", "Tanyakan pertanyaan", "Teka-teki"],
+        "responses": [
+          "Apa dua hal yang tidak bisa kamu makan untuk sarapan?.....Makan siang dan makan malam!",
+          "Apa kata yang dieja salah di setiap kamus?.....Salah",
+          "Bagaimana seorang gadis bisa pergi 25 hari tanpa tidur?.....Dia tidur malam!",
+          "Bagaimana kamu membuat angka satu menghilang?.....Tambahkan huruf G dan itu 'gone'!",
+          "Apa yang akan kamu temukan di akhir setiap pelangi?.....Huruf 'w'",
+          "Apa yang bisa ditangkap tapi tidak pernah dilempar?.....Flu!",
+          "Apa yang memiliki ibu jari dan empat jari tetapi tidak benar-benar hidup?.....Sarung tanganmu!",
+          "Apa kata lima huruf yang menjadi lebih pendek saat kamu menambahkan dua huruf padanya?.....Pendek",
+          "Mengapa sepeda tidak bisa berdiri sendiri?.....Ini dua-lelah."
+        ],
+        "context": ["teka-teki"]
+      },
+      {
+        "tag": "age",
+        "patterns": ["berapa umurmu", "kapan kamu dibuat", "berapa umurmu"],
+        "responses": ["Saya dibuat pada tahun 2023, jika itu yang kamu tanyakan!"]
+      }
+    ]
+  }
+  
